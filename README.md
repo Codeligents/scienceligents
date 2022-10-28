@@ -1,2 +1,2 @@
-# scienceigents
+# Scienceigents
 Scienceligents | Online science education
