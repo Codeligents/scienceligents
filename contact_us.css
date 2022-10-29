@@ -345,7 +345,7 @@ img{
 /*Form*/
 .form-container{
     height: 165vh;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/background.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(background.jpg);
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
