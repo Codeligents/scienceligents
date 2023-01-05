@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scienceligents | Welcome</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Codeligents [SLIIT CODEFEST 2022] -->
+
+    <!-- Swiper JS CSS [Open source]-->
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <!-- Scroll animation [Open soure]-->
+    <link rel="stylesheet" href="scrollreveal.js">
+
+    <!-- Boxicons [Free]-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- CSS --> 
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+<body>
+        
+<!-- Header -->
+    <header class="header">
+            <nav class="nav container flex">
+                    <a href="index.html" class="logo-content flex">
+                        <i class='site-icon'></i>
+                        <span class="logo-text">--------------------</span>
+                    </a>
+
+                    <div class="menu-content">
+                            <ul class="menu-list flex">
+                                    <li><a href="#" class="nav-link">------------</a></li>
+                                    <li><a href="#" class="nav-link">------------</a></li>
+                                    <li><a href="#" class="nav-link">------------</a></li>
+                                    <li><a href="#" class="nav-link">------------</a></li>
+                                    <li><a href="#" class="nav-link">------------</a></li>
+                                    <li><a href="#" class="nav-link">------------</a></li>
+                            </ul>
+
+                            <i class='bx bx-x navClose-btn'></i>
+                        </div>
+
+                        <!-- Greeting -->
+                        <div class="greeting-container">Demo Text</div>
+
+                        <!-- Color mode -->
+                        <div class="appearance">
+                            <div class="light-dark">
+                                    <i class="btn bx bxs-moon" data-color="#24292D #e4e6eb #b8b9bb #242526 #242526 #242526"></i>
+                            </div>
+                            <div class="color-icon">
+                                <div class="icons">
+                                    <i class="bx bxs-palette"></i>
+                                    <i class="bx bxs-down-arrow arrow"></i>
+                                </div>
+                                <div class="color-box">
+                                    <h3>Colour switcher</h3>
+                                    <div class="color-switchers">
+                                      <button class="btn black active" data-color="#ffffff #333333 #505050 #e3f2fd #ffffff #d5d5d5"></button> 
+                                      <button class="btn purple" data-color="#ffffff #8e44ad #752896 #f6e3fd #ffffff #d5d5d5"></button> 
+                                      <button class="btn orange" data-color="#ffffff #ff9100 #e47b20 #fdf5e3 #ffffff #d5d5d5"></button>  
+                                      <button class="btn green" data-color="#ffffff #2A6F31 #215f27 #e3fde4 #ffffff #d5d5d5"></button>
+                                      <button class="btn blue" data-color="#ffffff #215df5 #043cca #e3f2fd #ffffff #d5d5d5"></button>                                                                                              
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+              </div>
+
+                        <i class='bx bx-menu navOpen-btn'></i>
+                </nav>
+    </header>
+
+<!-- Home -->
+<main>
+        <section class="home" id="home">
+            
+           <div class="welcome-container">
+            <header>Welcome to Scienceligents !</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sint
+                delectus optio distinctio, expedita id dolores fugit earum sunt nostrum iusto
+                corporis eum vero, eos rem tempora non autem doloremque error ipsam? Quam obcaecati
+                quibusdam ab! Fugit facere adipisci voluptate officiis veritatis ullam voluptatem odio vel?
+                Reiciendis nostrum, quaerat ab quam, voluptatum deserunt doloremque id autem eum beatae
+                odit quis? Placeat neque sit, vero atque deleniti ad, sequi maiores sapiente natus mollitia
+                nesciunt impedit enim? Ducimus illum blanditiis minus quia odit consequatur maiores, nemo
+                aliquam eligendi repudiandae quasi praesentium vitae a sapiente aperiam, temporibus architecto
+                laboriosam ea itaque! Reiciendis, velit?
+            </p>
+            <span>Not available on internet. A school project [SLIIT CODEFEST 2022]</span>
+            <a href="#home"><button onclick="togglePopup()" class="register">Register now</button></a>
+            <a href="contact_us.html" target="_blank" class="contact"><i class="bx bx-phone contact-icon"></i>Contact Us</a>
+           </div>
+
+           <!-- Register -->
+           <div class="popup" id="popup">
+                <div class="close-btn" onclick="togglePopup()">&times;</div>
+                <form action="#">
+                        <h2>Register | Log-in</h2>
+                        <p>Exiting users can also log in to account by entering their email and password</p>
+                        <div class="form-element">
+                                <label for="email">Email :</label>
+                                <input type="email" id="email" placeholder="Enter email" required>
+                        </div>
+                        <div class="form-element">
+                                <label for="password">Password :</label>
+                                <input type="password" id="password" placeholder="Enter password" required >
+                        </div>
+                        <div class="form-element">
+                                <input type="checkbox">
+                                <label for="remember-me">Remember me</label>
+                        </div>
+                        <div class="form-element">
+                                <button type="button" id="submitData" name="submitData">Enter</button>
+                        </div>
+                        <div class="form-element">
+                                <a href="#">Forgot password ?</a>
+                        </div>
+                </form>
+           </div>
+
+           <!-- Alerts -->
+           <div class="toast" id="toast">
+                <div class="toast-content">
+                        <i class="bx bx-x mark"></i>
+
+                        <div class="message">
+                                <span class="text text-1">Error</span>
+                                <span class="text text-2">Enter valid information</span>
+                        </div>
+                        <div class="close">&times;</div>
+                </div>
+           </div>
+           <div class="toast" id="toast-1">
+                <div class="toast-content">
+                        <i class="bx bx-x mark"></i>
+
+                        <div class="message">
+                                <span class="text text-1">Success</span>
+                                <span class="text text-2">Account created successfully !</span>
+                        </div>
+                        <div class="close">&times;</div>
+                </div>
+           </div>
+           <div class="toast" id="toast-2">
+                <div class="toast-content">
+                        <i class="bx bx-x mark"></i>
+
+                        <div class="message">
+                                <span class="text text-1">Error</span>
+                                <span class="text text-2">Something went wrong !</span>
+                        </div>
+                        <div class="close">&times;</div>
+                </div>
+           </div>
+
+           <!-- Popup script -->
+           <script>
+                function togglePopup(){
+                        document.getElementById("popup").classList.toggle("active");
+                }
+           </script>
+
+           <!-- Alert script -->
+           <script>
+                const toast = document.querySelector(".toast"),
+                      closeIcon = document.querySelector(".close");
+
+                      closeIcon.addEventListener("click", () =>{
+                        toast.classList.remove("toast-active");
+                      });
+           </script>
+
+        </section>
+
+<!-- Footer -->
+<footer class="section footer">
+        <div class="footer-container container">
+                <div class="footer-content">
+                    <a href="#home" class="logo-content flex">
+                            <i class='bx bx-test-tube logo-icon'></i>
+                            <span class="footer-text">Scienceligents</span>
+                        </a>
+
+                        <p class="content-description">Scienceligents is a platform that you can learn SCIENCE subject</p>
+
+                        <div class="footer-notice flex">
+                            <i class='bx bx-no-signal notice-icon'></i>
+                            
+                            <div class="about-text">
+                                    Not available on internet. A school project [SLIIT CODEFEST 2022]
+                            </div>
+                        </div>
+                </div>
+
+                <div class="footer-linkContent">
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">Facility</h4>
+
+                                <li><a href="resources.html" class="footer-link" target="_blank">Resources</a></li>
+                                <li><a href="report_issue.html" class="footer-link">Report issue</a></li>
+                                <li><a href="https://github.io" class="footer-link" target="_blank">Github hosting</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">About us</h4>
+
+                                <li><a href="about_this_project.html" class="footer-link">About this project</a></li>
+                                <li><a href="about_our_school.html" class="footer-link">About our school</a></li>
+                                <li><a href="about_our_development.html" class="footer-link">About our development</a></li>
+                        </ul>
+                        <ul class="footer-links">
+                                <h4 class="footerLinks-title">Support</h4>
+
+                                <li><a href="#home" class="footer-link">Contact Us<span class="contact_us">Contact Us</span></a></li>
+                                <li><a href="faqs.html" class="footer-link">FAQs</a></li>
+                                <li><a href="help_us_to_improve.html" class="footer-link">Help us to improve</a></li>
+                        </ul>
+                </div>
+        </div>
+</footer>
+    
+<!-- Scroll Up -->
+        <a href="#home" class="scrollUp-btn flex">
+                <i class='bx bx-up-arrow-alt scrollUp-icon'></i>
+        </a>
+
+</main>
+
+<!-- Account system -->
+<script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+    
+    
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyC785NVHOxftocFxhSc4CXXf7KjwZ1dIAg",
+          authDomain: "account-system-117a7.firebaseapp.com",
+          projectId: "account-system-117a7",
+          storageBucket: "account-system-117a7.appspot.com",
+          messagingSenderId: "806110468572",
+          appId: "1:806110468572:web:ad073f4717566281a11719",
+          measurementId: "G-CD26RCSC2P"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+        const auth = getAuth();
+        const database = getDatabase(app);
+    
+    
+    
+        submitData.addEventListener('click', (e) =>{
+    
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+    
+            // createUserWithEmailAndPassword(auth, email, password)
+            //     .then((userCredential) => {
+            //         // Signed in 
+            //         const user = userCredential.user;
+            //         // ... 
+            //         set(ref(database, 'users/' + user.uid), {
+            //             email: email,
+            //             password: password
+            //         })
+            //         .then(() => {
+            //             // Data saved successfully!
+            //             alert('Account created successfuly')
+            //             window.location.replace("index.html");
+            //         })
+            //         .catch((error) => {
+            //             // The write failed...
+            //             alert('Something went wrong !');
+            //         });
+            //     })
+            //     .catch((error) => {
+            //         const errorCode = error.code;
+            //         const errorMessage = error.message;
+            //         // ..
+            //         alert(errorMessage);
+            //     });
+    
+            signInWithEmailAndPassword(auth, email, password)
+                .then((userCredential) => {
+                    // Signed in 
+                    const user = userCredential.user;
+                    // ...
+    
+                    var lgDate = new Date ();
+                    update(ref(database, 'users/' + user.uid), {
+                        last_login: lgDate,
+                    })
+                        .then(() => {
+                        // Data saved successfully!
+                        document.getElementById("toast-1").classList.add("toast-active");
+                        setTimeout(() =>{
+                                document.getElementById("toast-1").classList.remove("toast-active");
+                        }, 5000);
+
+                        window.location.replace("index.html");
+                        })
+
+                        .catch((error) => {
+                        // The write failed...
+                        document.getElementById("toast-2").classList.add("toast-active");
+                        setTimeout(() =>{
+                                document.getElementById("toast-2").classList.remove("toast-active");
+                        }, 5000);
+                        });
+                })
+            .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // alert(errorMessage);
+                document.getElementById("toast").classList.add("toast-active");
+                setTimeout(() =>{
+                        document.getElementById("toast").classList.remove("toast-active");
+                }, 5000);
+
+            });
+    
+            signOut (auth) .then(() => {
+                // Sign-out successful.
+            }).catch ((error) => {
+                // An error happened
+            })
+    
+        });
+</script>
+
+<!-- Swiper JS [Open source]-->
+<script src="swiper-bundle.min.js"></script>
+
+<!-- Scroll Reveal [Open source]-->
+<script src="scrollreveal.js"></script>
+
+<!-- JavaScript -->
+    <script src="script.js"></script>
+
+<!-- Color mode -->
+    <script src="color_mode.js"></script> 
+
+<!-- Greeting -->
+    <script src="greeting.js"></script>
+</body>
+</html>
